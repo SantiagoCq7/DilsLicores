@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111111;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background: #000;
+    color: #C19A6B  ;
+    padding: 20px;
+    font-size: 24px;
+}
+.catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    flex: 1 1 250px;
+}
+.producto img {
+    width: 100px;
+    height: auto;
+}
+.promo {
+    background: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.precio {
+    font-weight: bold;
+    font-size: 18px;
+}
+.cantidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.cantidad button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.agregar {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    background: #000;
+    color: #C19A6B;
+    padding: 20px;
+    font-size: 14px;
+    position: sticky;
+}
+
+.carrito {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.carrito ul {
+    list-style: none;
+    padding: 0;
+}

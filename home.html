@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style-home.css">
+</head>
+<body>
+
+    <!-- Menú lateral (Sidenav) con imagen -->
+    <div id="sidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu-header">
+            <img src="images/distriLicores.webp" alt="distriLicores">
+        </div>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    <!-- Botón para abrir el menú -->
+    <span class="openbtn" onclick="openNav()">☰ Menú</span>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una distribuidora de licores con más de 10 años de experiencia, ofreciendo productos de alta calidad para cada ocasión especial.</p>
+            </div>
+        </section>
+
+
+        <div class="container">
+            <h1>Distribuidora de Licores</h1>
+            <p>La mejor selección de licores premium para todas tus ocasiones especiales.</p>
+            <button class="button" onclick="window.location.href='catalogo.html'">Ver Catálogo</button>
+        </div>
+
+        <!-- Sección Productos Destacados -->
+        <section id="products">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div class="producto-grid">
+                    <div class="producto">
+                        <img src="images/buchanans.jpg" alt="Whisky">
+                        <h3>Whisky Premium</h3>
+                        <p>Una selección de los mejores whiskies del mundo.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/vino.jpg" alt="Vino">
+                        <h3>Vinos Exclusivos</h3>
+                        <p>Los mejores vinos seleccionados para ti.</p>
+                    </div>
+                    <div class="producto">
+                        <img src="images/ron.jpg" alt="Ron">
+                        <h3>Ron Artesanal</h3>
+                        <p>Rones de calidad superior para paladares exigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección Ofertas Especiales -->
+        <section id="offers">
+            <div class="container">
+                <h2>Ofertas Especiales</h2>
+                <p>Aprovecha descuentos exclusivos en nuestros productos seleccionados.</p>
+                <button class="button">Ver Ofertas</button>
+            </div>
+        </section>
+    
+        <!-- Sección Testimonios -->
+        <section id="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial">
+                    <p>"Excelentes productos y servicio impecable. ¡Recomendado!"</p>
+                    <h4>- Juan Pérez</h4>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección Contacto -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <p>Estamos disponibles para atenderte. Escríbenos o visítanos en nuestra tienda.</p>
+                <button class="button">Enviar Mensaje</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2023 Distribuidora de Licores. Todos los derechos reservados.</p>
+            </div>  
+        </footer>
+    
+</body>
+<script src="app.js"></script>
+</html>

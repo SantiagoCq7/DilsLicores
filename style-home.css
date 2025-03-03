@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-header img {
+    width: 80%; 
+    max-width: 180px;  
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenedor principal */
+  .container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Secciones */
+section {
+    padding: 60px 200px;
+    text-align: center;
+    padding-left: 200px;
+}
+
+/* Productos Destacados */
+.producto-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+  }
+  
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .sidenav a:hover {
+    background-color: #C19A6B;
+    color: black;
+    transition: 0.7s;
+  }
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #111;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #C19A6B;
+    transition: 0.7s;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #C19A6B; /* Dorado suave */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #A67C52; 
+    transition: 0.7s;
+    transform: scale(1.2);
+}
+
+.footer {
+    color: #C19A6B;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: sticky;
+
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .sidenav .closebtn {
+        font-size: 25px;
+    }
+}
